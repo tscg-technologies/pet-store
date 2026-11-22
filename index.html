@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PET STORE | Online Pet Store for Dog Food, Cat Food, Pet Toys &amp; Supplies (Demo)</title>
+  <meta name="description" content="Explore PET STORE, a modern online pet store demonstration showcasing dog food, cat food, pet accessories, pet toys, and pet grooming products. Illustrative demo website.">
+  <meta name="keywords" content="Pet Store, Online Pet Store, Dog Food, Cat Food, Pet Accessories, Pet Toys, Pet Grooming Products, Pet Supplies">
+  <meta property="og:title" content="PET STORE — Premium Online Pet Store Demo">
+  <meta property="og:description" content="Discover everyday essentials, delicious treats, playful toys and thoughtful accessories for dogs, cats, birds and small pets. Illustrative demo website.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="index.html">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Top Illustrative Demo Announcement Bar -->
+  <div class="announcement-bar" role="region" aria-label="Demo Promotion Notice">
+    <div class="announcement-bar-inner">
+      <span class="announcement-tag">Demo Promotion</span>
+      <span>Illustrative Offer: Sample Free Delivery Preview on Demo Carts Above ₹999 — <strong>All Products, Prices &amp; Offers Are Illustrative Demo Content Only</strong></span>
+    </div>
+  </div>
+
+  <!-- Global Navigation Header -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo" aria-label="PET STORE Home">
+        <span class="brand-logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <circle cx="7.5" cy="7.5" r="2.2"/>
+            <circle cx="12" cy="5.5" r="2.2"/>
+            <circle cx="16.5" cy="7.5" r="2.2"/>
+            <circle cx="19" cy="12" r="2"/>
+            <path d="M12 10.2c-3.2 0-5.8 2.4-6.2 5.3-.3 2.1 1.4 3.8 3.5 3.8 1 0 1.8-.3 2.7-.3s1.7.3 2.7.3c2.1 0 3.8-1.7 3.5-3.8-.4-2.9-3-5.3-6.2-5.3z"/>
+          </svg>
+        </span>
+        <span class="brand-logo-text">
+          <span>PET STORE</span>
+          <span class="brand-logo-sub">E-Commerce Demo</span>
+        </span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links" id="main-nav-links">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="shop.html" class="nav-link">Shop</a></li>
+          <li><a href="pet-care.html" class="nav-link">Pet Care</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="icon-btn" id="header-search-toggle" aria-label="Toggle Product Search" title="Search Products">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <a href="cart.html#wishlist-section" class="icon-btn" aria-label="View Demo Wishlist" title="Wishlist">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span class="badge-count js-wishlist-count">0</span>
+        </a>
+
+        <a href="cart.html" class="icon-btn" aria-label="View Demo Shopping Cart" title="Shopping Cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="badge-count js-cart-count">0</span>
+        </a>
+
+        <a href="shop.html" class="btn btn-primary btn-sm nav-cta-desktop">Shop Now</a>
+
+        <button type="button" class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Open Navigation Menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Collapsible Search Bar -->
+    <div class="header-search-bar" id="header-search-bar">
+      <div class="container">
+        <form action="shop.html" method="GET" class="header-search-form">
+          <input type="search" name="q" class="header-search-input" placeholder="Search demo dog food, cat food, toys, beds or grooming supplies..." aria-label="Search Demo Catalogue">
+          <button type="submit" class="btn btn-primary btn-sm">Search Shop</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- A. HERO SECTION -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="section-eyebrow">
+            <span>🐾</span> Online Pet Store Showcase • Illustrative Demo
+          </span>
+          <h1 class="hero-title">HAPPY PETS. <span>HAPPIER EVERYDAY.</span></h1>
+          <p class="hero-text">
+            Discover everyday essentials, delicious treats, playful toys and thoughtful accessories for the pets who make life special.
+          </p>
+          <div class="hero-actions">
+            <a href="shop.html" class="btn btn-primary">Shop Now</a>
+            <a href="#featured-categories" class="btn btn-outline">Explore Pet Essentials</a>
+          </div>
+          <div class="hero-highlights">
+            <div class="hero-highlight-item">
+              <span class="hero-highlight-dot" aria-hidden="true">✓</span>
+              <span>Dogs, Cats, Birds &amp; Small Pets</span>
+            </div>
+            <div class="hero-highlight-item">
+              <span class="hero-highlight-dot" aria-hidden="true">✓</span>
+              <span>Curated Everyday Supplies (Demo)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual-wrap">
+          <svg class="paw-deco paw-deco-1" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <circle cx="7.5" cy="7.5" r="2.2"/><circle cx="12" cy="5.5" r="2.2"/><circle cx="16.5" cy="7.5" r="2.2"/><circle cx="19" cy="12" r="2"/>
+            <path d="M12 10.2c-3.2 0-5.8 2.4-6.2 5.3-.3 2.1 1.4 3.8 3.5 3.8 1 0 1.8-.3 2.7-.3s1.7.3 2.7.3c2.1 0 3.8-1.7 3.5-3.8-.4-2.9-3-5.3-6.2-5.3z"/>
+          </svg>
+          <svg class="paw-deco paw-deco-2" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <circle cx="7.5" cy="7.5" r="2.2"/><circle cx="12" cy="5.5" r="2.2"/><circle cx="16.5" cy="7.5" r="2.2"/><circle cx="19" cy="12" r="2"/>
+            <path d="M12 10.2c-3.2 0-5.8 2.4-6.2 5.3-.3 2.1 1.4 3.8 3.5 3.8 1 0 1.8-.3 2.7-.3s1.7.3 2.7.3c2.1 0 3.8-1.7 3.5-3.8-.4-2.9-3-5.3-6.2-5.3z"/>
+          </svg>
+          <div class="hero-visual-card">
+            <div class="img-placeholder has-image img-placeholder-aspect-16-10" role="img" aria-label="Friendly Golden Retriever dog and Tabby cat relaxing together in a bright, warm sunlit living room">
+              <img src="images/hero-dog-and-cat-home.jpeg" alt="Friendly Dog and Cat relaxing together in a welcoming home" loading="eager" onerror="this.onerror=null; this.src='assets/images/hero-dog-and-cat-home.jpeg';">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- B. SHOP BY PET -->
+    <section class="section bg-white" id="shop-by-pet">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Tailored Discovery</span>
+          <h2 class="section-title">Shop by Pet</h2>
+          <p class="section-subtitle">Browse illustrative food, toys, bedding and care supplies organized by companion type.</p>
+        </div>
+
+        <div class="pet-grid">
+          <!-- Dogs -->
+          <article class="pet-card">
+            <div class="img-placeholder has-image img-placeholder-aspect-4-3" role="img" aria-label="Happy dog portrait with natural collar in warm daylight">
+              <img src="images/category-dogs.jpeg" alt="Dog companion supplies" loading="lazy" onerror="this.onerror=null; this.src='assets/images/category-dogs.jpeg';">
+            </div>
+            <div class="pet-card-body">
+              <h3 class="pet-card-title">Dogs</h3>
+              <p class="pet-card-desc">Nourishing kibble, crunchy biscuits, durable walk gear, and orthopedic beds for puppies and adult dogs.</p>
+              <a href="shop.html?pet=Dogs" class="btn btn-outline btn-sm">Explore Dogs</a>
+            </div>
+          </article>
+
+          <!-- Cats -->
+          <article class="pet-card">
+            <div class="img-placeholder has-image img-placeholder-aspect-4-3" role="img" aria-label="Curled tabby cat resting on soft linen cushion">
+              <img src="images/category-cats.jpeg" alt="Cat companion supplies" loading="lazy" onerror="this.onerror=null; this.src='assets/images/category-cats.jpeg';">
+            </div>
+            <div class="pet-card-body">
+              <h3 class="pet-card-title">Cats</h3>
+              <p class="pet-card-desc">Salmon &amp; herb nutrition, elevated ceramic bowls, gentle brushes, and cozy carriers for indoor cats.</p>
+              <a href="shop.html?pet=Cats" class="btn btn-outline btn-sm">Explore Cats</a>
+            </div>
+          </article>
+
+          <!-- Birds -->
+          <article class="pet-card">
+            <div class="img-placeholder has-image img-placeholder-aspect-4-3" role="img" aria-label="Colorful companion parakeet perched on natural wood branch">
+              <img src="images/category-birds.jpeg" alt="Companion bird supplies" loading="lazy" onerror="this.onerror=null; this.src='assets/images/category-birds.jpeg';">
+            </div>
+            <div class="pet-card-body">
+              <h3 class="pet-card-title">Birds</h3>
+              <p class="pet-card-desc">Clean seed and fruit blends, natural wooden perches, and foraging accessories for companion birds.</p>
+              <a href="shop.html?pet=Birds" class="btn btn-outline btn-sm">Explore Birds</a>
+            </div>
+          </article>
+
+          <!-- Small Pets -->
+          <article class="pet-card">
+            <div class="img-placeholder has-image img-placeholder-aspect-4-3" role="img" aria-label="Lop-eared rabbit and guinea pig with fresh Timothy hay">
+              <img src="images/category-small-pets.jpeg" alt="Small pet forage and supplies" loading="lazy" onerror="this.onerror=null; this.src='assets/images/category-small-pets.jpeg';">
+            </div>
+            <div class="pet-card-body">
+              <h3 class="pet-card-title">Small Pets</h3>
+              <p class="pet-card-desc">Sun-cured Timothy hay, herbal forage mixes, and safe habitat accessories for rabbits and guinea pigs.</p>
+              <a href="shop.html?pet=Small+Pets" class="btn btn-outline btn-sm">Explore Small Pets</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- C. FEATURED CATEGORIES (8 CARDS) -->
+    <section class="section bg-cream" id="featured-categories">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Everyday Pet Supplies</span>
+          <h2 class="section-title">Featured Categories</h2>
+          <p class="section-subtitle">Explore our illustrative product categories designed for effortless pet shopping.</p>
+        </div>
+
+        <div class="category-grid-8">
+          <a href="shop.html?category=Dog+Food" class="cat-tile">
+            <div class="cat-tile-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 11h16a1 1 0 0 1 1 1v.5a8.5 8.5 0 0 1-17 0V12a1 1 0 0 1 1-1Z"/><path d="M8 7c0-1.5 1.5-3 4-3s4 1.5 4 3"/></svg>
+            </div>
+            <div class="cat-tile-info">
+              <h3>Pet Food</h3>
+              <span>Dry Kibble, Seed &amp; Hay</span>
+            </div>
+          </a>
+
+          <a href="shop.html?category=Treats" class="cat-tile">
+            <div class="cat-tile-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 10c.7-.7 1.69 0 2.5 0a2.5 2.5 0 1 0 0-5 .5.5 0 0 1-.5-.5 2.5 2.5 0 1 0-5 0c0 .81.7 1.8 0 2.5l-7 7c-.7.7-1.69 0-2.5 0a2.5 2.5 0 0 0 0 5c.28 0 .5.22.5.5a2.5 2.5 0 1 0 5 0c0-.81-.7-1.8 0-2.5Z"/></svg>
+            </div>
+            <div class="cat-tile-info">
+              <h3>Treats &amp; Snacks</h3>
+              <span>Oven-Baked Rewards</span>
+            </div>
+          </a>
+
+          <a href="shop.html?category=Toys" class="cat-tile">
+            <div class="cat-tile-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 9 9"/><path d="M3 12a9 9 0 0 1 9 9"/></svg>
+            </div>
+            <div class="cat-tile-info">
+              <h3>Toys &amp; Playtime</h3>
+              <span>Ropes, Rings &amp; Enrichment</span>
+            </div>
+          </a>
+
+          <a href="shop.html?category=Beds" class="cat-tile">
+            <div class="cat-tile-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6"/><path d="M5 11V9a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v2"/><line x1="3" y1="15" x2="21" y2="15"/></svg>
+            </div>
+            <div class="cat-tile-info">
+              <h3>Beds &amp; Furniture</h3>
+              <span>Bolster Loungers &amp; Mats</span>
+            </div>
+          </a>
+
+          <a href="shop.html?category=Collars+%26+Leashes" class="cat-tile">
+            <div class="cat-tile-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="10" r="6"/><path d="M12 16v5"/><circle cx="12" cy="21" r="1"/></svg>
+            </div>
+            <div class="cat-tile-info">
+              <h3>Collars &amp; Leashes</h3>
+              <span>Padded Walk Gear</span>
+            </div>
+          </a>
+
+          <a href="shop.html?category=Grooming" class="cat-tile">
+            <div class="cat-tile-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3h6v4H9z"/><path d="M7 7h10v13a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2Z"/><line x1="12" y1="11" x2="12" y2="17"/></svg>
+            </div>
+            <div class="cat-tile-info">
+              <h3>Grooming Essentials</h3>
+              <span>Gentle Wash &amp; Brushes</span>
+            </div>
+          </a>
+
+          <a href="shop.html?category=Feeding+Accessories" class="cat-tile">
+            <div class="cat-tile-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 14h18l-2 6H5l-2-6Z"/><path d="M7 14v-3a5 5 0 0 1 10 0v3"/></svg>
+            </div>
+            <div class="cat-tile-info">
+              <h3>Feeding Accessories</h3>
+              <span>Ceramic &amp; Bamboo Bowls</span>
+            </div>
+          </a>
+
+          <a href="shop.html?category=Travel+Accessories" class="cat-tile">
+            <div class="cat-tile-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+            </div>
+            <div class="cat-tile-info">
+              <h3>Travel Accessories</h3>
+              <span>Ventilated Pet Carriers</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- D. FEATURED PRODUCTS (6 DEMO PRODUCTS) -->
+    <section class="section bg-white" id="featured-products">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Illustrative Catalogue</span>
+          <h2 class="section-title">Featured Pet Products</h2>
+          <p class="section-subtitle">Sample products with illustrative INR pricing and ratings. Every item is a demonstration entry and is not available for purchase.</p>
+        </div>
+
+        <div class="products-grid" id="home-featured-products">
+          <!-- Populated dynamically by js/app.js from DEMO_PRODUCTS -->
+        </div>
+
+        <div style="text-align:center; margin-top:2.5rem;">
+          <a href="shop.html" class="btn btn-primary">View All 12 Demo Products</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- E. SPECIAL COLLECTION: EVERYTHING YOUR NEW PUPPY NEEDS -->
+    <section class="section bg-cream">
+      <div class="container">
+        <div class="puppy-collection-box">
+          <div class="puppy-collection-grid">
+            <div>
+              <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:0.85rem;">
+                <span class="section-eyebrow" style="background:var(--bg-white); margin-bottom:0;">Curated Starter Collection</span>
+                <span class="demo-pill">Illustrative Demo Collection</span>
+              </div>
+              <h2 class="section-title" style="text-align:left;">EVERYTHING YOUR NEW PUPPY NEEDS</h2>
+              <p style="color:var(--text-secondary); margin-bottom:1.25rem;">
+                Bringing home a new puppy is an exciting milestone. This illustrative starter collection highlights the five foundational essentials every new puppy household explores first.
+              </p>
+
+              <div class="puppy-items-list">
+                <div class="puppy-item-card">
+                  <span class="puppy-item-num">1</span>
+                  <div>
+                    <strong style="display:block; font-size:0.95rem;">Puppy Food</strong>
+                    <span style="font-size:0.8rem; color:var(--text-secondary);">Gentle starter kibble (Demo)</span>
+                  </div>
+                </div>
+                <div class="puppy-item-card">
+                  <span class="puppy-item-num">2</span>
+                  <div>
+                    <strong style="display:block; font-size:0.95rem;">Food Bowl</strong>
+                    <span style="font-size:0.8rem; color:var(--text-secondary);">Non-slip ceramic dish (Demo)</span>
+                  </div>
+                </div>
+                <div class="puppy-item-card">
+                  <span class="puppy-item-num">3</span>
+                  <div>
+                    <strong style="display:block; font-size:0.95rem;">Soft Toy</strong>
+                    <span style="font-size:0.8rem; color:var(--text-secondary);">Braided cotton tug ring (Demo)</span>
+                  </div>
+                </div>
+                <div class="puppy-item-card">
+                  <span class="puppy-item-num">4</span>
+                  <div>
+                    <strong style="display:block; font-size:0.95rem;">Collar</strong>
+                    <span style="font-size:0.8rem; color:var(--text-secondary);">Adjustable soft webbing (Demo)</span>
+                  </div>
+                </div>
+                <div class="puppy-item-card" style="grid-column: 1 / -1;">
+                  <span class="puppy-item-num">5</span>
+                  <div>
+                    <strong style="display:block; font-size:0.95rem;">Grooming Brush</strong>
+                    <span style="font-size:0.8rem; color:var(--text-secondary);">Rounded bamboo pin brush for gentle coat care (Demo)</span>
+                  </div>
+                </div>
+              </div>
+
+              <div style="display:flex; align-items:center; gap:1rem; flex-wrap:wrap; margin-top:1.5rem;">
+                <a href="shop.html?pet=Dogs" class="btn btn-primary">Explore Puppy Essentials (Demo)</a>
+                <span style="font-size:0.8rem; font-weight:700; color:var(--text-secondary);">*Illustrative Demo Content Only</span>
+              </div>
+            </div>
+
+            <div>
+              <div class="img-placeholder has-image img-placeholder-aspect-4-3" role="img" aria-label="Curated Puppy Starter Kit flatlay with puppy food, ceramic bowl, soft cotton toy, collar, and bamboo grooming brush">
+                <img src="images/collection-puppy-starter-kit.jpeg" alt="Puppy Starter Collection — Food, Bowl, Soft Toy, Collar and Brush" loading="lazy" onerror="this.onerror=null; this.src='assets/images/collection-puppy-starter-kit.jpeg';">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- F. WHY PET OWNERS CHOOSE US (DESIGN CONTENT EXAMPLES) -->
+    <section class="section bg-white">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Design Content Examples</span>
+          <h2 class="section-title">Why Pet Owners Choose Us</h2>
+          <p class="section-subtitle">Illustrative value propositions demonstrating how a modern online pet store communicates convenience and clarity.</p>
+        </div>
+
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="value-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="4" r="2"/><circle cx="18" cy="8" r="2"/><circle cx="20" cy="16" r="2"/><path d="M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z"/></svg>
+            </div>
+            <h3>Products for Different Pets</h3>
+            <p>Dedicated sections for dogs, cats, companion birds, and small pets so every household finds suitable supplies.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <h3>Easy Product Discovery</h3>
+            <p>Intuitive category filters, pet suitability tags, and quick-view previews make comparing everyday items simple.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            </div>
+            <h3>Helpful Pet Care Information</h3>
+            <p>Practical, easy-to-read buying guides and routine care tips for new and experienced pet parents alike.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            </div>
+            <h3>Convenient Shopping Experience</h3>
+            <p>Responsive layout across mobile and desktop with wishlist saving and transparent product specifications.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- G. PET CARE CONTENT PREVIEW -->
+    <section class="section bg-cream">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Demonstration Guides</span>
+          <h2 class="section-title">Pet Care &amp; Buying Guides</h2>
+          <p class="section-subtitle">Educational demonstration articles to help pet owners explore everyday nutrition, puppy preparation, and grooming routines.</p>
+        </div>
+
+        <div class="articles-grid">
+          <article class="article-card">
+            <div class="article-card-media">
+              <div class="img-placeholder has-image img-placeholder-aspect-16-10" role="img" aria-label="Pet food bowls with wholesome kibble and measuring scoop">
+                <img src="images/article-choosing-pet-food.jpeg" alt="Choosing the Right Food for Your Pet" loading="lazy" onerror="this.onerror=null; this.src='assets/images/article-choosing-pet-food.jpeg';">
+              </div>
+            </div>
+            <div class="article-card-body">
+              <div><span class="demo-pill">Demonstration Content</span></div>
+              <h3 class="article-card-title">Choosing the Right Food for Your Pet</h3>
+              <p class="article-card-excerpt">Learn how life stage, pet size, and ingredient labels help guide everyday food selection for dogs, cats, birds, and small pets.</p>
+              <a href="pet-care.html#guide-food" class="btn btn-outline btn-sm">Read Demo Guide</a>
+            </div>
+          </article>
+
+          <article class="article-card">
+            <div class="article-card-media">
+              <div class="img-placeholder has-image img-placeholder-aspect-16-10" role="img" aria-label="Young puppy resting near a soft bed, bowl, and rope toy">
+                <img src="images/article-new-puppy-essentials.jpeg" alt="Essential Items for a New Puppy" loading="lazy" onerror="this.onerror=null; this.src='assets/images/article-new-puppy-essentials.jpeg';">
+              </div>
+            </div>
+            <div class="article-card-body">
+              <div><span class="demo-pill">Demonstration Content</span></div>
+              <h3 class="article-card-title">Essential Items for a New Puppy</h3>
+              <p class="article-card-excerpt">A practical checklist of bowls, bedding, safe chew toys, and gentle walking gear to prepare your home for a new puppy.</p>
+              <a href="pet-care.html#guide-puppy" class="btn btn-outline btn-sm">Read Demo Guide</a>
+            </div>
+          </article>
+
+          <article class="article-card">
+            <div class="article-card-media">
+              <div class="img-placeholder has-image img-placeholder-aspect-16-10" role="img" aria-label="Cat being gently brushed with a bamboo grooming brush">
+                <img src="images/article-cat-grooming-tips.jpeg" alt="Simple Grooming Tips for Cats" loading="lazy" onerror="this.onerror=null; this.src='assets/images/article-cat-grooming-tips.jpeg';">
+              </div>
+            </div>
+            <div class="article-card-body">
+              <div><span class="demo-pill">Demonstration Content</span></div>
+              <h3 class="article-card-title">Simple Grooming Tips for Cats</h3>
+              <p class="article-card-excerpt">How regular brushing sessions, calm handling, and appropriate grooming tools keep indoor cat coats comfortable and tidy.</p>
+              <a href="pet-care.html#guide-cat-grooming" class="btn btn-outline btn-sm">Read Demo Guide</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- H. FINAL CTA -->
+    <section class="section-sm">
+      <div class="container">
+        <div class="cta-banner">
+          <span class="demo-pill" style="margin-bottom:1rem; background:rgba(255,255,255,0.15); color:#fff; border-color:rgba(255,255,255,0.3);">Illustrative E-Commerce Showcase</span>
+          <h2>BECAUSE EVERY PET DESERVES SOMETHING SPECIAL.</h2>
+          <p>Browse our complete illustrative catalogue of pet food, treats, toys, beds, and grooming supplies.</p>
+          <a href="shop.html" class="btn btn-orange">Explore the Shop</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand-logo" style="color:var(--bg-white); margin-bottom:1rem;">
+            <span class="brand-logo-mark" style="background:var(--warm-orange); color:var(--text-dark);" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <circle cx="7.5" cy="7.5" r="2.2"/><circle cx="12" cy="5.5" r="2.2"/><circle cx="16.5" cy="7.5" r="2.2"/><circle cx="19" cy="12" r="2"/>
+                <path d="M12 10.2c-3.2 0-5.8 2.4-6.2 5.3-.3 2.1 1.4 3.8 3.5 3.8 1 0 1.8-.3 2.7-.3s1.7.3 2.7.3c2.1 0 3.8-1.7 3.5-3.8-.4-2.9-3-5.3-6.2-5.3z"/>
+              </svg>
+            </span>
+            <span class="brand-logo-text">
+              <span>PET STORE</span>
+              <span class="brand-logo-sub" style="color:rgba(255,249,240,0.7);">Demonstration Website</span>
+            </span>
+          </a>
+          <p style="font-size:0.9rem; color:rgba(255,249,240,0.75); margin-bottom:1rem;">
+            A modern static frontend e-commerce demonstration showcasing online pet store design, product discovery, and responsive shopping workflows.
+          </p>
+          <span class="demo-pill">DEMO MODE — NO REAL ORDERS</span>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop All Products</a></li>
+            <li><a href="product.html?id=p1">Sample Product Page</a></li>
+            <li><a href="pet-care.html">Pet Care &amp; Buying Guides</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="cart.html">Shopping Cart &amp; Wishlist</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Shop by Pet</h3>
+          <ul class="footer-links">
+            <li><a href="shop.html?pet=Dogs">Dogs</a></li>
+            <li><a href="shop.html?pet=Cats">Cats</a></li>
+            <li><a href="shop.html?pet=Birds">Birds</a></li>
+            <li><a href="shop.html?pet=Small+Pets">Small Pets</a></li>
+            <li><a href="shop.html?category=Treats">Pet Treats</a></li>
+            <li><a href="shop.html?category=Toys">Pet Toys</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Demo Contact Details</h3>
+          <ul class="footer-links">
+            <li>Phone: 0000000000</li>
+            <li>Email: <a href="mailto:demo@example.com">demo@example.com</a></li>
+            <li>Address: Plot No. 000, Demo Road, Sample Area, Hyderabad, Telangana – 000000</li>
+            <li>Hours: Mon–Sat, 9 AM–6 PM (Demo Hours)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 PET STORE — Static Frontend E-Commerce Demonstration Project. All products, prices, ratings, and promotions are illustrative only.</p>
+        <p>Built with Pure HTML5, CSS3 &amp; Vanilla JavaScript</p>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

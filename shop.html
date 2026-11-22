@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Pet Supplies | Dog Food, Cat Food, Pet Toys &amp; Accessories — PET STORE (Demo)</title>
+  <meta name="description" content="Browse our illustrative online pet store catalogue featuring dog food, cat food, bird food, small pet food, treats, toys, beds, collars, grooming products, and pet supplies.">
+  <meta name="keywords" content="Online Pet Store, Dog Food, Cat Food, Pet Accessories, Pet Toys, Pet Grooming Products, Pet Supplies, Shop Pet Products">
+  <meta property="og:title" content="Shop All Pet Products — PET STORE E-Commerce Demo">
+  <meta property="og:description" content="Explore 12 illustrative demo pet products across dog food, cat food, bird seed, small pet hay, treats, toys, beds, and grooming supplies.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="shop.html">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Top Illustrative Demo Announcement Bar -->
+  <div class="announcement-bar" role="region" aria-label="Demo Promotion Notice">
+    <div class="announcement-bar-inner">
+      <span class="announcement-tag">Demo Catalogue</span>
+      <span>Sample Promotion Preview: Use Filters &amp; Quick View to Explore Illustrative Pet Products — <strong>Not Real Inventory or Offers</strong></span>
+    </div>
+  </div>
+
+  <!-- Global Navigation Header -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo" aria-label="PET STORE Home">
+        <span class="brand-logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <circle cx="7.5" cy="7.5" r="2.2"/><circle cx="12" cy="5.5" r="2.2"/><circle cx="16.5" cy="7.5" r="2.2"/><circle cx="19" cy="12" r="2"/>
+            <path d="M12 10.2c-3.2 0-5.8 2.4-6.2 5.3-.3 2.1 1.4 3.8 3.5 3.8 1 0 1.8-.3 2.7-.3s1.7.3 2.7.3c2.1 0 3.8-1.7 3.5-3.8-.4-2.9-3-5.3-6.2-5.3z"/>
+          </svg>
+        </span>
+        <span class="brand-logo-text">
+          <span>PET STORE</span>
+          <span class="brand-logo-sub">E-Commerce Demo</span>
+        </span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links" id="main-nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="shop.html" class="nav-link active">Shop</a></li>
+          <li><a href="pet-care.html" class="nav-link">Pet Care</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="icon-btn" id="header-search-toggle" aria-label="Toggle Product Search" title="Search Products">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+
+        <a href="cart.html#wishlist-section" class="icon-btn" aria-label="View Demo Wishlist" title="Wishlist">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          <span class="badge-count js-wishlist-count">0</span>
+        </a>
+
+        <a href="cart.html" class="icon-btn" aria-label="View Demo Shopping Cart" title="Shopping Cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span class="badge-count js-cart-count">0</span>
+        </a>
+
+        <a href="shop.html" class="btn btn-primary btn-sm nav-cta-desktop">Shop Now</a>
+
+        <button type="button" class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Open Navigation Menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="header-search-bar" id="header-search-bar">
+      <div class="container">
+        <form action="shop.html" method="GET" class="header-search-form">
+          <input type="search" name="q" class="header-search-input" placeholder="Search demo dog food, cat food, toys, beds or grooming supplies..." aria-label="Search Demo Catalogue">
+          <button type="submit" class="btn btn-primary btn-sm">Search Shop</button>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container page-hero-inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span>Shop All Pet Products (Demo)</span>
+        </nav>
+        <h1 class="section-title" style="text-align:left; margin-bottom:0.25rem;">Shop All Pet Supplies</h1>
+        <p class="section-subtitle">Explore our 12 illustrative demo products across food, treats, toys, beds, grooming, and travel essentials.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="demo-banner-notice">
+          <div>
+            <strong>ILLUSTRATIVE CATALOGUE NOTICE:</strong> All product information, ratings, and INR prices shown below are sample demonstration data, not real inventory or commercial offers.
+          </div>
+          <span class="demo-pill">12 Sample Products</span>
+        </div>
+
+        <div class="shop-layout">
+          <!-- Sidebar Filters -->
+          <aside class="filter-sidebar" aria-label="Product Filters">
+            <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:1.25rem;">
+              <h2 style="font-size:1.1rem; font-weight:900;">Filter Catalogue</h2>
+              <button type="button" id="shop-reset-filters" style="font-size:0.8rem; font-weight:700; color:var(--forest-green); text-decoration:underline;">Reset All</button>
+            </div>
+
+            <!-- 1. Pet Type -->
+            <div class="filter-group">
+              <h3 class="filter-title">Pet Type</h3>
+              <div class="filter-options">
+                <label class="filter-label"><input type="checkbox" name="petType" value="Dogs"> Dogs</label>
+                <label class="filter-label"><input type="checkbox" name="petType" value="Cats"> Cats</label>
+                <label class="filter-label"><input type="checkbox" name="petType" value="Birds"> Birds</label>
+                <label class="filter-label"><input type="checkbox" name="petType" value="Small Pets"> Small Pets</label>
+              </div>
+            </div>
+
+            <!-- 2. Product Category (All 12 Required Categories) -->
+            <div class="filter-group">
+              <h3 class="filter-title">Product Category</h3>
+              <div class="filter-options">
+                <label class="filter-label"><input type="checkbox" name="category" value="Dog Food"> Dog Food</label>
+                <label class="filter-label"><input type="checkbox" name="category" value="Cat Food"> Cat Food</label>
+                <label class="filter-label"><input type="checkbox" name="category" value="Bird Food"> Bird Food</label>
+                <label class="filter-label"><input type="checkbox" name="category" value="Small Pet Food"> Small Pet Food</label>
+                <label class="filter-label"><input type="checkbox" name="category" value="Treats"> Treats</label>
+                <label class="filter-label"><input type="checkbox" name="category" value="Toys"> Toys</label>
+                <label class="filter-label"><input type="checkbox" name="category" value="Beds"> Beds</label>
+                <label class="filter-label"><input type="checkbox" name="category" value="Collars & Leashes"> Collars &amp; Leashes</label>
+                <label class="filter-label"><input type="checkbox" name="category" value="Grooming"> Grooming</label>
+                <label class="filter-label"><input type="checkbox" name="category" value="Feeding Accessories"> Feeding Accessories</label>
+                <label class="filter-label"><input type="checkbox" name="category" value="Travel Accessories"> Travel Accessories</label>
+                <label class="filter-label"><input type="checkbox" name="category" value="Pet Clothing"> Pet Clothing</label>
+              </div>
+            </div>
+
+            <!-- 3. Price Range -->
+            <div class="filter-group">
+              <h3 class="filter-title">Sample Price Range (INR)</h3>
+              <div class="filter-options">
+                <label class="filter-label"><input type="radio" name="priceRange" value="all" checked> All Sample Prices</label>
+                <label class="filter-label"><input type="radio" name="priceRange" value="under-800"> Under ₹800</label>
+                <label class="filter-label"><input type="radio" name="priceRange" value="800-1500"> ₹800 – ₹1,500</label>
+                <label class="filter-label"><input type="radio" name="priceRange" value="over-1500"> Above ₹1,500</label>
+              </div>
+            </div>
+
+            <!-- 4. Product Type -->
+            <div class="filter-group">
+              <h3 class="filter-title">Product Type</h3>
+              <div class="filter-options">
+                <label class="filter-label"><input type="checkbox" name="productType" value="Dry Food"> Dry Food</label>
+                <label class="filter-label"><input type="checkbox" name="productType" value="Seed Mix"> Seed Mix</label>
+                <label class="filter-label"><input type="checkbox" name="productType" value="Forage Hay"> Forage Hay</label>
+                <label class="filter-label"><input type="checkbox" name="productType" value="Biscuit Treats"> Biscuit Treats</label>
+                <label class="filter-label"><input type="checkbox" name="productType" value="Interactive Toy"> Interactive Toy</label>
+                <label class="filter-label"><input type="checkbox" name="productType" value="Bedding"> Bedding</label>
+                <label class="filter-label"><input type="checkbox" name="productType" value="Walk Gear"> Walk Gear</label>
+                <label class="filter-label"><input type="checkbox" name="productType" value="Coat Care"> Coat Care</label>
+                <label class="filter-label"><input type="checkbox" name="productType" value="Bowls & Feeders"> Bowls &amp; Feeders</label>
+                <label class="filter-label"><input type="checkbox" name="productType" value="Carriers"> Carriers</label>
+                <label class="filter-label"><input type="checkbox" name="productType" value="Apparel"> Apparel</label>
+              </div>
+            </div>
+
+            <!-- 5. Brand (Generic Demo Labels) -->
+            <div class="filter-group">
+              <h3 class="filter-title">Demo Brand Label</h3>
+              <div class="filter-options">
+                <label class="filter-label"><input type="checkbox" name="brand" value="DemoLine Nutrition"> DemoLine Nutrition</label>
+                <label class="filter-label"><input type="checkbox" name="brand" value="DemoPlay Studio"> DemoPlay Studio</label>
+                <label class="filter-label"><input type="checkbox" name="brand" value="DemoHome Pets"> DemoHome Pets</label>
+                <label class="filter-label"><input type="checkbox" name="brand" value="DemoWalk Co."> DemoWalk Co.</label>
+                <label class="filter-label"><input type="checkbox" name="brand" value="DemoCare Botanicals"> DemoCare Botanicals</label>
+                <label class="filter-label"><input type="checkbox" name="brand" value="DemoAvian Pantry"> DemoAvian Pantry</label>
+                <label class="filter-label"><input type="checkbox" name="brand" value="DemoMeadow Small Pets"> DemoMeadow Small Pets</label>
+              </div>
+            </div>
+
+            <!-- 6. Availability (Demo Status) -->
+            <div class="filter-group">
+              <h3 class="filter-title">Availability (Demo Status)</h3>
+              <div class="filter-options">
+                <label class="filter-label"><input type="checkbox" name="availability" value="In Stock (Demo)"> In Stock (Demo)</label>
+                <label class="filter-label"><input type="checkbox" name="availability" value="Limited Demo Sample"> Limited Demo Sample</label>
+              </div>
+            </div>
+          </aside>
+
+          <!-- Main Catalogue Area -->
+          <div>
+            <div class="shop-toolbar">
+              <div class="shop-search-wrap">
+                <input type="search" id="shop-search-input" class="shop-input" placeholder="Search by product name, pet type, or category..." aria-label="Filter products by keyword">
+              </div>
+              <div style="display:flex; align-items:center; gap:0.75rem; flex-wrap:wrap;">
+                <span id="shop-results-count" style="font-size:0.85rem; color:var(--text-secondary); font-weight:600;">Showing 12 of 12 illustrative demo products</span>
+                <label for="shop-sort-select" style="font-size:0.85rem; font-weight:700;">Sort by:</label>
+                <select id="shop-sort-select" class="shop-select">
+                  <option value="featured">Featured</option>
+                  <option value="price-asc">Price: Low to High</option>
+                  <option value="price-desc">Price: High to Low</option>
+                  <option value="name-asc">Name: A to Z</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="products-grid" id="shop-products-grid">
+              <!-- Populated dynamically by js/app.js -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand-logo" style="color:var(--bg-white); margin-bottom:1rem;">
+            <span class="brand-logo-mark" style="background:var(--warm-orange); color:var(--text-dark);" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="7.5" cy="7.5" r="2.2"/><circle cx="12" cy="5.5" r="2.2"/><circle cx="16.5" cy="7.5" r="2.2"/><circle cx="19" cy="12" r="2"/><path d="M12 10.2c-3.2 0-5.8 2.4-6.2 5.3-.3 2.1 1.4 3.8 3.5 3.8 1 0 1.8-.3 2.7-.3s1.7.3 2.7.3c2.1 0 3.8-1.7 3.5-3.8-.4-2.9-3-5.3-6.2-5.3z"/></svg>
+            </span>
+            <span class="brand-logo-text">
+              <span>PET STORE</span>
+              <span class="brand-logo-sub" style="color:rgba(255,249,240,0.7);">Demonstration Website</span>
+            </span>
+          </a>
+          <p style="font-size:0.9rem; color:rgba(255,249,240,0.75); margin-bottom:1rem;">
+            A modern static frontend e-commerce demonstration showcasing online pet store design, product discovery, and responsive shopping workflows.
+          </p>
+          <span class="demo-pill">DEMO MODE — NO REAL ORDERS</span>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop All Products</a></li>
+            <li><a href="product.html?id=p1">Sample Product Page</a></li>
+            <li><a href="pet-care.html">Pet Care &amp; Buying Guides</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="cart.html">Shopping Cart &amp; Wishlist</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Shop by Pet</h3>
+          <ul class="footer-links">
+            <li><a href="shop.html?pet=Dogs">Dogs</a></li>
+            <li><a href="shop.html?pet=Cats">Cats</a></li>
+            <li><a href="shop.html?pet=Birds">Birds</a></li>
+            <li><a href="shop.html?pet=Small+Pets">Small Pets</a></li>
+            <li><a href="shop.html?category=Treats">Pet Treats</a></li>
+            <li><a href="shop.html?category=Toys">Pet Toys</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Demo Contact Details</h3>
+          <ul class="footer-links">
+            <li>Phone: 0000000000</li>
+            <li>Email: <a href="mailto:demo@example.com">demo@example.com</a></li>
+            <li>Address: Plot No. 000, Demo Road, Sample Area, Hyderabad, Telangana – 000000</li>
+            <li>Hours: Mon–Sat, 9 AM–6 PM (Demo Hours)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 PET STORE — Static Frontend E-Commerce Demonstration Project. All products, prices, ratings, and promotions are illustrative only.</p>
+        <p>Built with Pure HTML5, CSS3 &amp; Vanilla JavaScript</p>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
